@@ -18,10 +18,10 @@ const App = () => {
       
     
            <Routes>
-               <Route exact path="/Avstrian" component={()=><Avstrian/>}/>
-               <Route exact path="/French" component={()=><French/>}/>
-               <Route exact path="/Rom" component={()=><Rom/>}/>
-               <Route exact path="/Upp" component={()=><Upp/>}/>
+               <Route exact path="/Avstrian" element={<Avstrian/>}/>
+               <Route exact path="/French" element={<French/>}/>
+               <Route exact path="/Rom" element={<Rom/>}/>
+               <Route exact path="/Upp" element={<Upp/>}/>
             </Routes>
   
         </div>

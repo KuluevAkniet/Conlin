@@ -56,3 +56,30 @@
       column-gap: 16px;
 }
 
+@keyframes slidein {
+     from {
+          border-bottom: 1px solid white;
+          width: auto;
+          height: auto;
+     }
+   
+     to {
+          width: auto;
+          height: auto;
+     }
+   }
+
+.main__Link{  
+    text-decoration: none;
+}
+
+.main__Link:hover{
+     animation-duration: 5s;
+     animation-name: slidein;
+     animation-iteration-count: infinite;
+}
+
+.main__img{
+     padding-top: 10px;
+}
+

@@ -6,10 +6,12 @@ import   Uup from '../img/up.jpg';
 import    Icons from  '../logo/Vector.svg';
 import Dillers from "../dillers/dillers";
 import French  from "../img/img.jpg";
+import Rom from '../Rom/Rom'
 import './basic.css';
 import Studio from "../studio/studio";
 import Win from "../Win/win";
 import Footer from "../footer/footer";
+import { Link } from "react-router-dom";
 
 const Basic = () => {
 
@@ -31,10 +33,11 @@ const Basic = () => {
 
                                                             <div className="main__avstri  img">
                                                                 <div className="main__icons">
-                                                                     <p className="main__minititle">австрийские шторы</p>
+                                                                   <Link to="/Avstrian"  className="main__Link"><p className="main__minititle">австрийские шторы</p></Link>
                                                                      <img src={Icons}  alt={Icons} />
                                                                 </div>
-                                                                <img className="main__1img"  src={Avstrian} alt={Avstrian} /></div>
+                                                           <img className="main__img"  src={Avstrian} alt={Avstrian} />
+                                                              </div>
                                                             </div>
                                                          
                                                              </div>
@@ -43,10 +46,10 @@ const Basic = () => {
 
                                            <div className="main__british img">
                                               <div className="main__icons"> 
-                                                     <p className="main__minititle">лондонские шторы</p>
+                                              <Link to="/British"  className="main__Link">  <p className="main__minititle">лондонские шторы</p></Link>
                                                      <img src={Icons}  alt={Icons} />
                                               </div>
-                                                   <img  className="main__img"   src={British}   alt={British}/>
+                                                  <Link to="/" ><img  className="main__img"   src={British}   alt={British}/></Link>
                                            </div>
 
                                         </div>
@@ -54,7 +57,7 @@ const Basic = () => {
                                         <div className="main__2 ">
                                               <div className="main__img1">
                                                  <div className="main__icons">
-                                                      <p className="main__minititle">римские шторы</p>
+                                                 <Link to="/Rom"  className="main__Link">   <p className="main__minititle">римские шторы</p></Link>
                                                       <img src={Icons}  alt={Icons} />
                                                  </div>
                                                       <img  className="main__img"   src={Room}   alt={Room}/>    
@@ -62,7 +65,7 @@ const Basic = () => {
 
                                               <div className="main__img2   img">
                                                     <div className="main__icons">
-                                                        <p className="main__minititle">французские шторы</p>
+                                                    <Link to="/French"  className="main__Link"><p className="main__minititle">французские шторы</p></Link>
                                                          <img src={Icons}  alt={Icons} />
                                                     </div>
                                                      <img   className="main__img"  src={French}  alt={French}/>    
@@ -71,7 +74,7 @@ const Basic = () => {
 
                                               <div className="main__img2   img">
                                                     <div className="main__icons">
-                                                        <p className="main__minititle">  прямые шторы</p>
+                                                    <Link to="/Upp"  className="main__Link"><p className="main__minititle">  прямые шторы</p></Link>
                                                          <img src={Icons}  alt={Icons} />
                                                     </div>
                                                      <img   className="main__img"  src={Uup}  alt={Uup}/>    
